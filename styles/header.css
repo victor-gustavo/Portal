@@ -1,0 +1,15 @@
+#primary{
+    padding-block: 20px;
+    justify-content: space-between;
+}
+#secondary{
+    padding-block: 14px;
+    justify-content: space-between;
+    border: solid 1px var(--stroke-color);
+    border-inline: none;
+}
+.container{
+    max-width: 1280px;
+    padding-inline: 32px;
+    margin-inline: auto;
+}
