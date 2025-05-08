@@ -1,7 +1,63 @@
+section header{
+    border-top:1px solid var(--stroke-color);
+    padding-block: 12px 24px;
+    font: var(--text-span);
+}
 #featured{
     img{
         height: 100%;
         object-fit: cover;
         border-radius: 4px;
+    }
+} 
+.card{
+    border-radius: inherit;
+    position: relative;
+    overflow: hidden;
+    &::before{
+        content: "";
+        background: linear-gradient(180deg, transparent 0%, #020617 100%);
+        inset: 0;
+        top: 50%;
+        position: absolute;
+    }
+    figcaption{
+        position: absolute;
+        bottom: 0;
+        padding: 24px;
+        
+        &::has(.text-lg){
+            padding: 12px;
+        }
+        h2{
+            margin-top:8px
+        }
+    }
+}
+#weekly{
+    header a{
+        justify-self: end;
+        align-items: center;
+        gap: 8px;
+        span{
+            background-image: url(..assets/icons/ArrowRight.svg);
+        width: 16px;
+        height: 16px;  
+        }
+    }
+    &>div{
+        grid-template-columns: repeat(4, 292px);
+    }
+    img {
+        height: 160px;
+    }
+    figure{
+        position: relative;
+        
+        .content-tag{
+            position: absolute;
+            top: 8px;
+            left: 8px;
+         }
     }
 }

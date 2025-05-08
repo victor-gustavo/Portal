@@ -1,6 +1,12 @@
 #primary{
     padding-block: 20px;
     justify-content: space-between;
+    
+    div{
+        gap: 8px;
+        display: flex;
+        align-items: center;
+    }
 }
 #secondary{
     padding-block: 14px;
